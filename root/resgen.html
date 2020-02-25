@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+</head>
+
+<body>
+    <form>
+        skills =
+        <input type="text" name="skills" id="skill">
+    </form>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.tokeninput.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/token-input.css" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#skill").tokenInput("/skills/json");
+        });
+        // setTimeout(()=>{
+        //     location.replace("/techtest.html");
+        // },3000);
+    </script>
+</body>
+
+</html>
